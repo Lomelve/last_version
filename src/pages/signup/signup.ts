@@ -44,4 +44,8 @@ export class SignupPage {
     })
   }
 
+  exitChat(){
+    this.navCtrl.push('SigninPage');
+  }
+
 }
