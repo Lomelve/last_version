@@ -9,12 +9,13 @@
 
   <ion-navbar color="nav">
     <ion-title>{{contact.displayName}}</ion-title>
-  </ion-navbar>
-  <ion-buttons end>
-      <button ion-button icon-only (click)="exitChat()">
+    <ion-buttons end>
+      <button ion-button icon-only color ="sender" (click)="exitChat()">
         <ion-icon name="exit"></ion-icon>
       </button>
     </ion-buttons>
+  </ion-navbar>
+  
 
 </ion-header>
 
@@ -24,16 +25,16 @@
   <ion-list no-lines>
     <ion-item *ngFor = "let item of allmessages; let i = index" text-wrap>
         <div class="bubble you" *ngIf="item.sentby === contact.uid">
-          <button primary ion-item icon-start (click)="decrypt(item.message, i)">
-            {{item.message}}
+          <button color ="orange" ion-item icon-start (click)="decrypt(item.message, i)">
+            {{item.message}} 
           </button>
       </div>
     
       <div class="bubble me" *ngIf="item.sentby != contact.uid">
        
-          <button primary ion-item icon-start (click)="decrypt(item.message, i)">
-              {{item.message}}
-            </button>
+          <button sender ion-item icon-start (click)="decrypt(item.message, i)">
+               {{item.message}}
+         </button>
      
       </div>
     </ion-item>

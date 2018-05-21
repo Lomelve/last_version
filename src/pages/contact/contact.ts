@@ -55,6 +55,12 @@ export class ContactPage {
     });
   }
 
+  logout() {
+    firebase.auth().signOut().then(() => {
+      this.navCtrl.setRoot('SigninPage');
+    })
+  }
+
 }
 
 

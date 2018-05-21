@@ -5,18 +5,21 @@ page-message {
         }
         
         .bubble{
-            background-color: #F2F2F2;
+            
             border-radius: 5px;
-            box-shadow: 0 0 6px #B2B2B2;
+       
             display: inline-block;
             margin-right: 60 px;
             position: relative;
             vertical-align: top;
+            width: 95 px;
+            padding:5px;
+            background-color:  #C0392B  ;
         }
         
 
         .bubble::before {
-            background-color: #F2F2F2;
+            background-color:  #C0392B  ;
             content: "\00a0";
             display: block;
             height: 16px;
@@ -32,31 +35,32 @@ page-message {
         }
         
         .me {
-            margin: 5px20px 5px 45px;
-            background-color :#EC7063; 
+           
+           
+            background-color: #1ABC9C;  
             word-wrap: break-word;
                    
         }
         
         .me::before {
             box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
-            left: -9px;  
-            background-color : #EC7063;     
+          
+            background-color: #1ABC9C;      
             word-wrap: break-word;    
         }
         
         .you {
            
-            margin: 5px 20px 5px 45px;
-            color : gray;    
+           
+            color :#C0392B  ;    
             word-wrap: break-word;     
         }
         
         .you::before {
             box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );
-            right: -9px;  
-            color : gray;  
-            word-wrap: break-word;    
+             
+            color :#C0392B  ;  
+             word-wrap: break-word;    
         }
         
         .chatwindow {

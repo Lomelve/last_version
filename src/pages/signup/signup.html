@@ -6,8 +6,13 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color ="nav">
     <ion-title>signup</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color ="sender" (click)="exitChat()">
+        <ion-icon name="exit"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -26,10 +31,10 @@
           </ion-item>
           <ion-item>
             <ion-label floating>Enter your password</ion-label>
-            <ion-input type="text" [(ngModel)]="data.password" name="password" required=""></ion-input>
+            <ion-input type="password" [(ngModel)]="data.password" name="password" required=""></ion-input>
           </ion-item>
           <ion-item>
-            <button ion-button full round color="secondary" type="submit">Sign up</button>
+            <button ion-button full  color="sender" type="submit">Sign up</button>
           </ion-item>
         </ion-list>
     </form>

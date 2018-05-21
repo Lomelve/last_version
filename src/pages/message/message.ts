@@ -48,10 +48,6 @@ export class MessagePage {
         buttons: ['OKEY']
       });
       alert.present();
-    
-    
-    
-   
   }
 
   addmessage() {
