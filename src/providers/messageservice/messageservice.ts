@@ -1,4 +1,4 @@
-import { key } from './../../models/Key';
+
 import { Injectable } from '@angular/core';
 import * as firebase from 'firebase'
 import { Events } from 'ionic-angular';
@@ -20,7 +20,7 @@ export class MessageserviceProvider {
   msg;
   kmessages = [];
   thekey;
-  mkey = {} as key;
+ 
   
   constructor(public events: Events) {
     console.log('Hello MessageserviceProvider Provider');
@@ -57,6 +57,8 @@ export class MessageserviceProvider {
       return promise;
     }
   }
+
+
 
 
 

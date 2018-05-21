@@ -34,6 +34,7 @@ export class MessagePage {
     this.kmessages=[];
    this.allmessages = this.messageservice.allmessages;
   //  this.decrypt(this.allmessages);
+  this.messageservice.thekey
 
   })  
   }
@@ -45,10 +46,11 @@ export class MessagePage {
       let alert = this.alertCtrl.create({
         title: 'Decrypted Message',
         subTitle: this.dec,
-        buttons: ['OKEY']
+        buttons: ['OK']
       });
       alert.present();
   }
+
 
   addmessage() {
      this.messageservice.addnewmessage(this.newmessage).then(() => {
