@@ -9,24 +9,20 @@
   <ion-navbar color="nav">
     <ion-grid>
       <ion-row>
-          <ion-col col-1>
-         <ion-title>Contacts</ion-title> 
+          <ion-col col-6>
+         <ion-title class ="contact">Contacts</ion-title> 
           </ion-col>
-          <ion-col col-7>
-              <ion-searchbar class = "searchbar" button-left  [(ngModel)]="searchstring" (input)="searchuser($event)" placeholder="Search"> </ion-searchbar>   
-          </ion-col>
-          <ion-col col-4>
+          <ion-col col-6>
             <button class="logout" round clear color="sender"  class="logoutbutton" ion-button icon-left  (click) = "logout()">
-             Sign Out
-               
-            </button>
-         </ion-col>
-        
+              Sign Out
+             </button>
          
+          </ion-col>      
         </ion-row>
     </ion-grid>
   </ion-navbar>
-
+  <ion-searchbar class = "searchbar" button-left  [(ngModel)]="searchstring" (input)="searchuser($event)" placeholder="Search"> </ion-searchbar>   
+  
 </ion-header>
 
 
